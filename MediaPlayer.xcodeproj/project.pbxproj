@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		505D2C5025E81E6E00B59786 /* VideoDescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D2C4F25E81E6E00B59786 /* VideoDescriptionTableViewController.swift */; };
+		509C402425E8F8480099524F /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C402325E8F8480099524F /* VideoViewController.swift */; };
+		509C402825E907930099524F /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C402725E907930099524F /* RecordingViewController.swift */; };
 		50ADCC4125E6753C00B420E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADCC4025E6753C00B420E8 /* AppDelegate.swift */; };
 		50ADCC4325E6753C00B420E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADCC4225E6753C00B420E8 /* SceneDelegate.swift */; };
-		50ADCC4525E6753C00B420E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADCC4425E6753C00B420E8 /* ViewController.swift */; };
 		50ADCC4825E6753C00B420E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC4625E6753C00B420E8 /* Main.storyboard */; };
 		50ADCC4A25E6754500B420E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC4925E6754500B420E8 /* Assets.xcassets */; };
 		50ADCC4D25E6754500B420E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC4B25E6754500B420E8 /* LaunchScreen.storyboard */; };
+		50ADCC5725E67F9600B420E8 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADCC5625E67F9600B420E8 /* AudioViewController.swift */; };
+		50ADCC6025E68E4A00B420E8 /* TheOffspring-DaysGoBy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC5B25E68E4900B420E8 /* TheOffspring-DaysGoBy.mp3 */; };
+		50ADCC6125E68E4A00B420E8 /* PinkFloyd-WishYouWereHere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC5C25E68E4900B420E8 /* PinkFloyd-WishYouWereHere.mp3 */; };
+		50ADCC6225E68E4A00B420E8 /* ImagineDragons-monster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC5D25E68E4900B420E8 /* ImagineDragons-monster.mp3 */; };
+		50ADCC6325E68E4A00B420E8 /* Nirvana-Sappy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC5E25E68E4A00B420E8 /* Nirvana-Sappy.mp3 */; };
+		50ADCC6425E68E4A00B420E8 /* Creedence-FortunateSon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC5F25E68E4A00B420E8 /* Creedence-FortunateSon.mp3 */; };
+		50ADCC6725E6904800B420E8 /* Model and Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADCC6625E6904800B420E8 /* Model and Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		505D2C4F25E81E6E00B59786 /* VideoDescriptionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDescriptionTableViewController.swift; sourceTree = "<group>"; };
+		509C402325E8F8480099524F /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		509C402725E907930099524F /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 		50ADCC3D25E6753C00B420E8 /* MediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ADCC4025E6753C00B420E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50ADCC4225E6753C00B420E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50ADCC4425E6753C00B420E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50ADCC4725E6753C00B420E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50ADCC4925E6754500B420E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50ADCC4C25E6754500B420E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50ADCC4E25E6754500B420E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50ADCC5625E67F9600B420E8 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		50ADCC5B25E68E4900B420E8 /* TheOffspring-DaysGoBy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "TheOffspring-DaysGoBy.mp3"; path = "../../../../../../../../Downloads/TheOffspring-DaysGoBy.mp3"; sourceTree = "<group>"; };
+		50ADCC5C25E68E4900B420E8 /* PinkFloyd-WishYouWereHere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "PinkFloyd-WishYouWereHere.mp3"; path = "../../../../../../../../Downloads/PinkFloyd-WishYouWereHere.mp3"; sourceTree = "<group>"; };
+		50ADCC5D25E68E4900B420E8 /* ImagineDragons-monster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ImagineDragons-monster.mp3"; path = "../../../../../../../../Downloads/ImagineDragons-monster.mp3"; sourceTree = "<group>"; };
+		50ADCC5E25E68E4A00B420E8 /* Nirvana-Sappy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Nirvana-Sappy.mp3"; path = "../../../../../../../../Downloads/Nirvana-Sappy.mp3"; sourceTree = "<group>"; };
+		50ADCC5F25E68E4A00B420E8 /* Creedence-FortunateSon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Creedence-FortunateSon.mp3"; path = "../../../../../../../../Downloads/Creedence-FortunateSon.mp3"; sourceTree = "<group>"; };
+		50ADCC6625E6904800B420E8 /* Model and Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model and Storage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +76,30 @@
 			children = (
 				50ADCC4025E6753C00B420E8 /* AppDelegate.swift */,
 				50ADCC4225E6753C00B420E8 /* SceneDelegate.swift */,
-				50ADCC4425E6753C00B420E8 /* ViewController.swift */,
+				50ADCC6625E6904800B420E8 /* Model and Storage.swift */,
+				50ADCC5625E67F9600B420E8 /* AudioViewController.swift */,
+				505D2C4F25E81E6E00B59786 /* VideoDescriptionTableViewController.swift */,
+				509C402325E8F8480099524F /* VideoViewController.swift */,
+				509C402725E907930099524F /* RecordingViewController.swift */,
 				50ADCC4625E6753C00B420E8 /* Main.storyboard */,
+				50ADCC5A25E68D2700B420E8 /* Music */,
 				50ADCC4925E6754500B420E8 /* Assets.xcassets */,
 				50ADCC4B25E6754500B420E8 /* LaunchScreen.storyboard */,
 				50ADCC4E25E6754500B420E8 /* Info.plist */,
 			);
 			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
+		50ADCC5A25E68D2700B420E8 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				50ADCC5F25E68E4A00B420E8 /* Creedence-FortunateSon.mp3 */,
+				50ADCC5D25E68E4900B420E8 /* ImagineDragons-monster.mp3 */,
+				50ADCC5E25E68E4A00B420E8 /* Nirvana-Sappy.mp3 */,
+				50ADCC5C25E68E4900B420E8 /* PinkFloyd-WishYouWereHere.mp3 */,
+				50ADCC5B25E68E4900B420E8 /* TheOffspring-DaysGoBy.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +160,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				50ADCC4D25E6754500B420E8 /* LaunchScreen.storyboard in Resources */,
+				50ADCC6025E68E4A00B420E8 /* TheOffspring-DaysGoBy.mp3 in Resources */,
 				50ADCC4A25E6754500B420E8 /* Assets.xcassets in Resources */,
+				50ADCC6425E68E4A00B420E8 /* Creedence-FortunateSon.mp3 in Resources */,
+				50ADCC6225E68E4A00B420E8 /* ImagineDragons-monster.mp3 in Resources */,
 				50ADCC4825E6753C00B420E8 /* Main.storyboard in Resources */,
+				50ADCC6325E68E4A00B420E8 /* Nirvana-Sappy.mp3 in Resources */,
+				50ADCC6125E68E4A00B420E8 /* PinkFloyd-WishYouWereHere.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50ADCC4525E6753C00B420E8 /* ViewController.swift in Sources */,
+				50ADCC5725E67F9600B420E8 /* AudioViewController.swift in Sources */,
+				505D2C5025E81E6E00B59786 /* VideoDescriptionTableViewController.swift in Sources */,
+				509C402425E8F8480099524F /* VideoViewController.swift in Sources */,
+				509C402825E907930099524F /* RecordingViewController.swift in Sources */,
 				50ADCC4125E6753C00B420E8 /* AppDelegate.swift in Sources */,
 				50ADCC4325E6753C00B420E8 /* SceneDelegate.swift in Sources */,
+				50ADCC6725E6904800B420E8 /* Model and Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S4VTW7X9U3;
 				INFOPLIST_FILE = MediaPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NikitinEgor.MediaPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S4VTW7X9U3;
 				INFOPLIST_FILE = MediaPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NikitinEgor.MediaPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
