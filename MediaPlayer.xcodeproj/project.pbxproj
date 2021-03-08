@@ -16,12 +16,12 @@
 		50ADCC4A25E6754500B420E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC4925E6754500B420E8 /* Assets.xcassets */; };
 		50ADCC4D25E6754500B420E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC4B25E6754500B420E8 /* LaunchScreen.storyboard */; };
 		50ADCC5725E67F9600B420E8 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADCC5625E67F9600B420E8 /* AudioViewController.swift */; };
-		50ADCC6025E68E4A00B420E8 /* TheOffspring-DaysGoBy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC5B25E68E4900B420E8 /* TheOffspring-DaysGoBy.mp3 */; };
-		50ADCC6125E68E4A00B420E8 /* PinkFloyd-WishYouWereHere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC5C25E68E4900B420E8 /* PinkFloyd-WishYouWereHere.mp3 */; };
-		50ADCC6225E68E4A00B420E8 /* ImagineDragons-monster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC5D25E68E4900B420E8 /* ImagineDragons-monster.mp3 */; };
-		50ADCC6325E68E4A00B420E8 /* Nirvana-Sappy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC5E25E68E4A00B420E8 /* Nirvana-Sappy.mp3 */; };
-		50ADCC6425E68E4A00B420E8 /* Creedence-FortunateSon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50ADCC5F25E68E4A00B420E8 /* Creedence-FortunateSon.mp3 */; };
 		50ADCC6725E6904800B420E8 /* Model and Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADCC6625E6904800B420E8 /* Model and Storage.swift */; };
+		50BAD8E725F6634300B2368B /* TheOffspring-DaysGoBy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50BAD8E225F6634200B2368B /* TheOffspring-DaysGoBy.mp3 */; };
+		50BAD8E925F6634300B2368B /* PinkFloyd-WishYouWereHere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50BAD8E425F6634300B2368B /* PinkFloyd-WishYouWereHere.mp3 */; };
+		50BAD8EA25F6634300B2368B /* ImagineDragons-monster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50BAD8E525F6634300B2368B /* ImagineDragons-monster.mp3 */; };
+		50BAD8EB25F6634300B2368B /* Nirvana-Sappy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50BAD8E625F6634300B2368B /* Nirvana-Sappy.mp3 */; };
+		50BAD8EF25F6636900B2368B /* Creedence-FortunateSon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50BAD8EE25F6636900B2368B /* Creedence-FortunateSon.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,12 +36,12 @@
 		50ADCC4C25E6754500B420E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50ADCC4E25E6754500B420E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50ADCC5625E67F9600B420E8 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
-		50ADCC5B25E68E4900B420E8 /* TheOffspring-DaysGoBy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "TheOffspring-DaysGoBy.mp3"; path = "../../../../../../../../Downloads/TheOffspring-DaysGoBy.mp3"; sourceTree = "<group>"; };
-		50ADCC5C25E68E4900B420E8 /* PinkFloyd-WishYouWereHere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "PinkFloyd-WishYouWereHere.mp3"; path = "../../../../../../../../Downloads/PinkFloyd-WishYouWereHere.mp3"; sourceTree = "<group>"; };
-		50ADCC5D25E68E4900B420E8 /* ImagineDragons-monster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ImagineDragons-monster.mp3"; path = "../../../../../../../../Downloads/ImagineDragons-monster.mp3"; sourceTree = "<group>"; };
-		50ADCC5E25E68E4A00B420E8 /* Nirvana-Sappy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Nirvana-Sappy.mp3"; path = "../../../../../../../../Downloads/Nirvana-Sappy.mp3"; sourceTree = "<group>"; };
-		50ADCC5F25E68E4A00B420E8 /* Creedence-FortunateSon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Creedence-FortunateSon.mp3"; path = "../../../../../../../../Downloads/Creedence-FortunateSon.mp3"; sourceTree = "<group>"; };
 		50ADCC6625E6904800B420E8 /* Model and Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model and Storage.swift"; sourceTree = "<group>"; };
+		50BAD8E225F6634200B2368B /* TheOffspring-DaysGoBy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TheOffspring-DaysGoBy.mp3"; sourceTree = "<group>"; };
+		50BAD8E425F6634300B2368B /* PinkFloyd-WishYouWereHere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "PinkFloyd-WishYouWereHere.mp3"; sourceTree = "<group>"; };
+		50BAD8E525F6634300B2368B /* ImagineDragons-monster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ImagineDragons-monster.mp3"; sourceTree = "<group>"; };
+		50BAD8E625F6634300B2368B /* Nirvana-Sappy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nirvana-Sappy.mp3"; sourceTree = "<group>"; };
+		50BAD8EE25F6636900B2368B /* Creedence-FortunateSon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Creedence-FortunateSon.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +93,11 @@
 		50ADCC5A25E68D2700B420E8 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				50ADCC5F25E68E4A00B420E8 /* Creedence-FortunateSon.mp3 */,
-				50ADCC5D25E68E4900B420E8 /* ImagineDragons-monster.mp3 */,
-				50ADCC5E25E68E4A00B420E8 /* Nirvana-Sappy.mp3 */,
-				50ADCC5C25E68E4900B420E8 /* PinkFloyd-WishYouWereHere.mp3 */,
-				50ADCC5B25E68E4900B420E8 /* TheOffspring-DaysGoBy.mp3 */,
+				50BAD8EE25F6636900B2368B /* Creedence-FortunateSon.mp3 */,
+				50BAD8E525F6634300B2368B /* ImagineDragons-monster.mp3 */,
+				50BAD8E625F6634300B2368B /* Nirvana-Sappy.mp3 */,
+				50BAD8E425F6634300B2368B /* PinkFloyd-WishYouWereHere.mp3 */,
+				50BAD8E225F6634200B2368B /* TheOffspring-DaysGoBy.mp3 */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -159,14 +159,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BAD8EB25F6634300B2368B /* Nirvana-Sappy.mp3 in Resources */,
+				50BAD8EA25F6634300B2368B /* ImagineDragons-monster.mp3 in Resources */,
 				50ADCC4D25E6754500B420E8 /* LaunchScreen.storyboard in Resources */,
-				50ADCC6025E68E4A00B420E8 /* TheOffspring-DaysGoBy.mp3 in Resources */,
+				50BAD8EF25F6636900B2368B /* Creedence-FortunateSon.mp3 in Resources */,
+				50BAD8E725F6634300B2368B /* TheOffspring-DaysGoBy.mp3 in Resources */,
 				50ADCC4A25E6754500B420E8 /* Assets.xcassets in Resources */,
-				50ADCC6425E68E4A00B420E8 /* Creedence-FortunateSon.mp3 in Resources */,
-				50ADCC6225E68E4A00B420E8 /* ImagineDragons-monster.mp3 in Resources */,
 				50ADCC4825E6753C00B420E8 /* Main.storyboard in Resources */,
-				50ADCC6325E68E4A00B420E8 /* Nirvana-Sappy.mp3 in Resources */,
-				50ADCC6125E68E4A00B420E8 /* PinkFloyd-WishYouWereHere.mp3 in Resources */,
+				50BAD8E925F6634300B2368B /* PinkFloyd-WishYouWereHere.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
