@@ -12,7 +12,7 @@ final class AudioViewController: UIViewController {
     
     //MARK: - Properties
     
-    private var player: AVAudioPlayer!
+    private var player: AVAudioPlayer = AVAudioPlayer()
     
     private var numberOfTrack: Int = 0
     
