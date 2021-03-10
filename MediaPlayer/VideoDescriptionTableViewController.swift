@@ -40,10 +40,6 @@ final class VideoDescriptionTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goToVideo", sender: self)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToVideo" {
             let videoString = Storage.shared.videos[tableView.indexPathForSelectedRow!.row].youTubeString

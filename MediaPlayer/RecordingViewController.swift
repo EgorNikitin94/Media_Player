@@ -10,8 +10,8 @@ import AVFoundation
 
 final class RecordingViewController: UIViewController, AVAudioRecorderDelegate {
     
-    private var audioRecorder: AVAudioRecorder!
-    private var player: AVAudioPlayer!
+    private var audioRecorder: AVAudioRecorder?
+    private var player: AVAudioPlayer = AVAudioPlayer()
     private var meterTimer: Timer!
     private var isAudioRecordingGranted: Bool!
     private var audioFilename: URL!
@@ -65,10 +65,10 @@ final class RecordingViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-
-            audioRecorder = nil
-        }
+        super.didReceiveMemoryWarning()
+        
+        audioRecorder = nil
+    }
     
     private func playerSettings() {
         if let audio = audioFilename {
@@ -98,88 +98,97 @@ final class RecordingViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     //MARK:- Audio recorder buttons action.
-        @IBAction private func audioRecorderAction(_ sender: UIButton) {
+    @IBAction private func audioRecorderAction(_ sender: UIButton) {
+        
+        buttonAnimate(button: sender)
+        
+        recordButton.isEnabled = false
+        
+        stopButton.isEnabled = true
+        
+        if isAudioRecordingGranted {
             
-            buttonAnimate(button: sender)
+            //Create the session.
+            let session = AVAudioSession.sharedInstance()
             
-            if isAudioRecordingGranted {
-
-                //Create the session.
-                let session = AVAudioSession.sharedInstance()
-
-                do {
-                    //Configure the session for recording and playback.
-                    try session.setCategory(AVAudioSession.Category.playAndRecord, options: .defaultToSpeaker)
-                    try session.setActive(true)
-                    //Set up a high-quality recording session.
-                    let settings = [
-                        AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-                        AVSampleRateKey: 44100,
-                        AVNumberOfChannelsKey: 2,
-                        AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
-                    ]
-                    //Create audio file name URL
-                    audioFilename = getDocumentsDirectory().appendingPathComponent("audioRecording.m4a")
-                    //Create the audio recording, and assign ourselves as the delegate
-                    audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
-                    audioRecorder.delegate = self
-                    audioRecorder.isMeteringEnabled = true
-                    audioRecorder.record()
-                    meterTimer = Timer.scheduledTimer(timeInterval: 0.1, target:self, selector:#selector(self.updateAudioMeter(timer:)), userInfo:nil, repeats:true)
-                }
-                catch let error {
-                    print("Error for start audio recording: \(error.localizedDescription)")
-                }
+            do {
+                //Configure the session for recording and playback.
+                try session.setCategory(AVAudioSession.Category.playAndRecord, options: .defaultToSpeaker)
+                try session.setActive(true)
+                //Set up a high-quality recording session.
+                let settings = [
+                    AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+                    AVSampleRateKey: 44100,
+                    AVNumberOfChannelsKey: 2,
+                    AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+                ]
+                //Create audio file name URL
+                audioFilename = getDocumentsDirectory().appendingPathComponent("audioRecording.m4a")
+                //Create the audio recording, and assign ourselves as the delegate
+                audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
+                guard let audioRecorder = audioRecorder else { return }
+                audioRecorder.delegate = self
+                audioRecorder.isMeteringEnabled = true
+                audioRecorder.record()
+                meterTimer = Timer.scheduledTimer(timeInterval: 0.1, target:self, selector:#selector(self.updateAudioMeter(timer:)), userInfo:nil, repeats:true)
+            }
+            catch let error {
+                print("Error for start audio recording: \(error.localizedDescription)")
             }
         }
-
-        @IBAction private func stopAudioRecordingAction(_ sender: UIButton) {
-            
-            buttonAnimate(button: sender)
-            
-            finishAudioRecording(success: true)
-            
-            playerSettings()
-            
-            playStopButton.isEnabled = true
+    }
+    
+    @IBAction private func stopAudioRecordingAction(_ sender: UIButton) {
+        
+        buttonAnimate(button: sender)
+        
+        finishAudioRecording(success: true)
+        
+        playerSettings()
+        
+        playStopButton.isEnabled = true
+    }
+    
+    private func finishAudioRecording(success: Bool) {
+        
+        recordButton.isEnabled = true
+        
+        if audioRecorder != nil {
+            audioRecorder!.stop()
+            audioRecorder = nil
+            meterTimer.invalidate()
+        } else {
+            stopButton.isEnabled = false
         }
-
-        private func finishAudioRecording(success: Bool) {
-            
-            if audioRecorder != nil {
-                audioRecorder.stop()
-                audioRecorder = nil
-                meterTimer.invalidate()
-            } else {
-                stopButton.isEnabled = false
-            }
-            
-            if success {
-                print("Recording finished successfully.")
-            } else {
-                print("Recording failed")
-            }
+        
+        if success {
+            print("Recording finished successfully.")
+        } else {
+            print("Recording failed")
         }
-
+    }
+    
     @objc func updateAudioMeter(timer: Timer) {
-
-            if audioRecorder.isRecording {
-                let hr = Int((audioRecorder.currentTime / 60) / 60)
-                let min = Int(audioRecorder.currentTime / 60)
-                let sec = Int(audioRecorder.currentTime.truncatingRemainder(dividingBy: 60))
-                let totalTimeString = String(format: "%02d:%02d:%02d", hr, min, sec)
-                recordingTimeLabel.text = totalTimeString
-                audioRecorder.updateMeters()
-            }
+        
+        guard let audioRecorder = audioRecorder else { return }
+        
+        if audioRecorder.isRecording {
+            let hr = Int((audioRecorder.currentTime / 60) / 60)
+            let min = Int(audioRecorder.currentTime / 60)
+            let sec = Int(audioRecorder.currentTime.truncatingRemainder(dividingBy: 60))
+            let totalTimeString = String(format: "%02d:%02d:%02d", hr, min, sec)
+            recordingTimeLabel.text = totalTimeString
+            audioRecorder.updateMeters()
         }
-
-        private func getDocumentsDirectory() -> URL {
-
-            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-            let documentsDirectory = paths[0]
-            return documentsDirectory
-        }
-
+    }
+    
+    private func getDocumentsDirectory() -> URL {
+        
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
     @IBAction func playStopAudio(_ sender: UIButton) {
         buttonAnimate(button: sender)
         
@@ -193,11 +202,11 @@ final class RecordingViewController: UIViewController, AVAudioRecorderDelegate {
         
     }
     //MARK:- Audio recorder delegate methods
-        func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-
-            if !flag {
-                finishAudioRecording(success: false)
-            }
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        
+        if !flag {
+            finishAudioRecording(success: false)
         }
+    }
     
 }
